@@ -254,7 +254,7 @@
 // .----------------------------------------------------------.       .-----------------------------------------------------.
 // |    TAB    |        |   <)-  | <)-/-  |   <)+   |   ?      |       |  home  |  pgdown|  pgup   |  end   |  PRCRN |       |
 // |-----------+--------+--------+--------+---------+----------|       |--------+--------+---------+--------+--------+-------|
-// |    SHFT   |        |        |   o-   |   o+    |   ,      |       | left   |  down  |  up     |  left |        |       |
+// |    SHFT   |        |        |   o-   |   o+    |   ,      |       | left   |  down  |  up     |  right |        |       |
 // |-----------+--------+--------+--------+---------+----------|       |--------+--------+---------+--------+--------+-------|
 // |    CTRL   |PicinPic|  prev  |  play  |  next   |   .      |       |  paste |  copy  |   cut   | undo   |        |       |
 // '-----------------------------+--------+---------+----------+       |--------+--------+---------+-------------------------'
@@ -263,7 +263,7 @@
 
                        bindings = <
   &kp TAB     &none     &kp C_VOL_DN  &kp C_MUTE      &kp C_VOL_UP   &kp QMARK     &kp HOME     &kp PG_DN   &kp PG_UP    &kp END    &kp PSCRN   &trans
-  &kp LSHFT   &none     &none         &kp C_BRI_DEC   &kp C_BRI_INC  &kp COMMA     &kp LEFT     &hmr LSHFT DOWN    &hmr LCTRL UP  &hmr LALT LEFT  &hmr LWIN SEMI       &none
+  &kp LSHFT   &none     &none         &kp C_BRI_DEC   &kp C_BRI_INC  &kp COMMA     &kp LEFT     &hmr LSHFT DOWN    &hmr LCTRL UP  &hmr LALT RIGHT  &hmr LWIN SEMI       &none
   &kp LCTRL   &kp C_PIP &kp C_PREV    &kp C_PP        &kp C_NEXT     &kp DOT       &kp K_PASTE  &kp K_COPY  &kp K_CUT    &kp K_UNDO &none       &none
                         &none         &kp LG(LC(F5))  &kp LG(LC(F6))                     &trans   &trans   &trans
                        >;
