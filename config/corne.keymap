@@ -17,8 +17,8 @@
 #define FUNC 5
 #define CONT 6
 
-&lt { quick_tap_ms = <200>; };
 &mt { quick_tap_ms = <200>; };
+&lt { quick_tap_ms = <200>; };
 
 
 / {
