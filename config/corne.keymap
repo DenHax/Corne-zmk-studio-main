@@ -145,27 +145,26 @@
 
                 default_layer {
 // .-------------------------------------------------------.       .-----------------------------------------------------------.
-// |  ESC  |    Q    |    W   |   E    |    R    |    T    |       |   Y   |    U    |    I    |    O    |     P    |  Fnc/[   |
+// |  ESC  |    Q    |    W   |   E    |    R    |    T    |       |   Y   |    U    |    I    |    O    |     P    |     [    |
 // |-------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
-// |  SHFT |  GUI/A  |  ALT/S |CTRlL/D | SHFT/F  |    G    |       |   H   | SHFT/J  | CTRL/K  |  ALT/L  |  GUI/;   |     '    |
+// |  SHFT |    A    |    S   |   D    |    F    |    G    |       |   H   |    J    |    K    |    L    |     ;    |     '    |
 // |-------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
 // |  CTRL |    Z    |    X   |   C    |    V    |    B    |       |   N   |    M    |    ,    |    .    |     /    |     ]    |
 // '--------------------------+--------+---------+---------+       |-------+---------+---------+-------------------------------'
-//                            |  ALT   | TAB/LWR | RSE/SPC |       |  RET  |   BKSP  |   CONT  |
+//                            |  ALT   |   LWR   | RSE/SPC |       |  RET  |   BKSP  |   GUI   |
 //                            '--------+---------+---------'       '-------+---------+---------'
-
                         bindings = <
-     &kp ESC   &kp Q       &kp W       &kp E        &kp R        &kp T         &kp Y  &kp U        &kp I         &kp O        &kp P          &lt FUNC LEFT_BRACKET
-     &kp LSHFT &hml LWIN A &hml LALT S &hml LCTRL D &hml LSHFT F &kp G         &kp H  &hmr LSHFT J &hmr LCTRL K  &hmr LALT L  &hmr LWIN SEMI &kp SQT
-     &kp LCTRL &kp Z       &kp X       &kp C        &kp V        &kp B         &kp N  &kp M        &kp COMMA     &kp DOT      &kp FSLH       &kp RBKT
-                             &kp LALT &lt TAB LWR &lt RSE SPACE                &kp ENTER  &kp BSPC &lt CONT CAPS
+     &kp ESC    &kp Q  &kp W    &kp E   &kp R         &kp T         &kp Y      &kp U    &kp I     &kp O   &kp P    &kp LBKT
+     &kp LSHFT  &kp A  &kp S    &kp D   &kp F         &kp G         &kp H      &kp J    &kp K     &kp L   &kp SEMI &kp SQT
+     &kp LCTRL  &kp Z  &kp X    &kp C   &kp V         &kp B         &kp N      &kp M    &kp COMMA &kp DOT &kp FSLH &kp RBKT
+                       &kp LALT &mo LWR &lt RSE SPACE               &kp ENTER  &kp BSPC &kp LWIN
                         >;
                 };
   
   
                 game_layer {
 // .-------------------------------------------------------.       .-----------------------------------------------------------.
-// |  ESC  |    T    |    Q   |   W    |    E    |    R    |       |   Y   |    U    |    I    |    O    |     P    |     F/[  |
+// |  ESC  |    T    |    Q   |   W    |    E    |    R    |       |   Y   |    U    |    I    |    O    |     P    |     [    |
 // |-------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
 // |   G   |   SHFT  |    A   |   S    |    D    |    F    |       |   H   |    J    |    K    |    L    |     ;    |     '    |
 // |-------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
@@ -174,14 +173,13 @@
 //                            |  ALT   |   LWR   |   SPC   |       |  RET  |   BKSP  |   GUI   |
 //                            '--------+---------+---------'       '-------+---------+---------'
                         bindings = <
-     &kp ESC  &kp T      &kp Q        &kp W          &kp E   &kp R                        &kp Y    &kp U           &kp I         &kp O        &kp P          &lt FUNC LEFT_BRACKET
-     &kp G    &kp LSHFT  &hml LWIN A  &hml LALT S    &hml LCTRL D   &hml LSHFT F          &kp H    &hmr LSHFT J    &hmr LCTRL K  &hmr LALT L  &hmr LWIN SEMI &kp SQT
-     &kp Z    &kp LCTRL  &kp X        &kp C          &kp V   &kp B                        &kp N    &kp M           &kp COMMA     &kp DOT      &kp FSLH       &kp RBKT
-                             &kp LALT   &mo LWR  &kp SPACE                                  &kp ENTER  &kp BSPC  &kp LWIN
+     &kp ESC  &kp T      &kp Q     &kp W    &kp E   &kp R          &kp Y      &kp U     &kp I      &kp O    &kp P     &kp LBKT
+     &kp G    &kp LSHFT  &kp A     &kp S    &kp D   &kp F          &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
+     &kp Z    &kp LCTRL  &kp H     &kp C    &kp V   &kp B          &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
+                         &kp LALT  &mo LWR  &kp SPACE              &kp ENTER  &kp BSPC  &kp LWIN
                         >;
                 };
   
-   
   
                 lower_layer {
 // .----------------------------------------------------------.       .-----------------------------------------------------.
