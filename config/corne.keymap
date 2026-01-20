@@ -175,8 +175,8 @@
                         bindings = <
      &kp TAB  &kp T      &kp Q        &kp W          &kp E   &kp R                        &kp Y    &kp U           &kp I         &kp O        &kp P          &lt FUNC LEFT_BRACKET
      &kp G    &kp LSHFT  &hml LWIN A  &hml LALT S    &hml LCTRL D   &hml LSHFT F          &kp H    &hmr LSHFT J    &hmr LCTRL K  &hmr LALT L  &hmr LWIN SEMI &kp SQT
-     &kp Z    &kp LCTRL  &kp X        &kp C          &kp V   &kp B                        &kp N    &kp M           &kp COMMA     &kp DOT      &kp FSLH       &kp RBKT
-                         &kp LALT     &kp ESC  &kp SPACE                                  &kp ENTER  &kp BSPC  &kp LWIN
+     &kp Z    &kp LCTRL  &kp I        &kp C          &kp V   &kp M                        &kp N    &kp M           &kp COMMA     &kp DOT      &kp FSLH       &kp RBKT
+                         &kp LALT     &kp ESC  &lt RSE SPACE                              &kp ENTER  &kp BSPC  &kp LWIN
                         >;
                 };
   
@@ -193,9 +193,9 @@
 
                         bindings = <
    &kp TAB     &kp N1    &kp N2     &kp N3    &kp N4     &kp N5          &kp CARET     &kp AMPS   &kp STAR     &kp LPAR   &kp RPAR  &kp DEL
-   &kp LSHFT   &kp F4    &kp LEFT   &kp UP    &kp RIGHT  &kp HOME        &kp C_VOL_DN  &kp C_MUTE &kp C_VOL_UP &trans     &trans    &kp GRAVE
-   &kp LCTRL   &kp LC(N) &kp PG_UP  &kp DOWN  &kp PG_DN  &kp END         &kp C_PREV    &kp C_PP   &kp C_NEXT   &trans     &trans    &kp BSLH
-                          &kp LALT   &trans    &lt ADJ ENTER              &trans   &trans   &trans
+   &kp LSHFT   &trans    &kp LEFT   &kp UP    &kp RIGHT  &kp HOME        &kp C_VOL_DN  &kp C_MUTE &kp C_VOL_UP &trans     &trans    &kp GRAVE
+   &kp LCTRL   &trans    &kp PG_UP  &kp DOWN  &kp PG_DN  &kp END         &kp C_PREV    &kp C_PP   &kp C_NEXT   &trans     &trans    &kp BSLH
+                          &kp LALT   &trans    &lt ADJ ENTER           &trans   &kp DEL   &trans
                         >;
                 };
   
@@ -264,9 +264,9 @@
 //                               '--------+---------+----------'       '--------+--------+---------'
 
                        bindings = <
-  &kp TAB     &none     &kp C_VOL_DN  &kp C_MUTE      &kp C_VOL_UP   &kp QMARK     &kp HOME     &kp PG_DN   &kp PG_UP    &kp END    &kp PSCRN   &trans
-  &kp LSHFT   &none     &none         &kp C_BRI_DEC   &kp C_BRI_INC  &kp COMMA     &kp LEFT     &hmr LSHFT DOWN    &hmr LCTRL UP  &hmr LALT RIGHT  &hmr LWIN SEMI       &none
-  &kp LCTRL   &kp C_PIP &kp C_PREV    &kp C_PP        &kp C_NEXT     &kp DOT       &kp K_PASTE  &kp K_COPY  &kp K_CUT    &kp K_UNDO &none       &none
+  &kp TAB     &none     &kp C_VOL_DN  &kp C_MUTE      &kp C_VOL_UP   &kp QMARK     &kp HOME     &kp PG_DN          &kp PG_UP      &kp END          &kp PSCRN        &trans
+  &kp LSHFT   &none     &none         &kp C_BRI_DEC   &kp C_BRI_INC  &kp COMMA     &kp LEFT     &hmr LSHFT DOWN    &hmr LCTRL UP  &hmr LALT RIGHT  &hmr LG(PSCRN)   &none
+  &kp LCTRL   &kp C_PIP &kp C_PREV    &kp C_PP        &kp C_NEXT     &kp DOT       &kp K_PASTE  &kp K_COPY         &kp K_CUT      &kp K_UNDO       &none            &none
                         &none         &kp LG(LC(F5))  &kp LG(LC(F6))                     &trans   &trans   &trans
                        >;
                };
