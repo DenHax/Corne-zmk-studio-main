@@ -236,6 +236,8 @@
 
             label = "INFINITY";
         };
+
+    };
         keymap {
                 compatible = "zmk,keymap";
 
