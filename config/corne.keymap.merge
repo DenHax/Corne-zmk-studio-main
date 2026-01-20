@@ -260,9 +260,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &kp O       &lt 4 P
-       &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H    &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SEMI
-&kp Q  &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp BSLH
+&kp Q      &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &kp O       &lt 4 P        &kp BSLH
+&kp Q      &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H    &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SEMI  &kp BSLH
+&kp Q      &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp BSLH
                                &kp TAB      &lt 1 TAB    &kp SPACE    &kp RET  &lt 2 ESC    &kp BSPC
             >;
         };
@@ -286,8 +286,8 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp AT       &kp AMPERSAND  &kp UP    &kp EQUAL  &kp ASTRK     &kp EXCL   &kp N1  &kp N2   &kp N3  &kp KP_COMMA
-           &kp CARET    &kp LEFT       &kp DOWN  &kp RIGHT  &kp HASH      &kp QMARK  &kp N4  &kp N5   &kp N6  &kp KP_DOT
+&kp SLASH          &kp AT       &kp AMPERSAND  &kp UP    &kp EQUAL  &kp ASTRK     &kp EXCL   &kp N1  &kp N2   &kp N3  &kp KP_COMMA     &kp BACKSLASH
+&kp SLASH          &kp CARET    &kp LEFT       &kp DOWN  &kp RIGHT  &kp HASH      &kp QMARK  &kp N4  &kp N5   &kp N6  &kp KP_DOT       &kp BACKSLASH
 &kp SLASH  &kp PERCENT  &kp PG_UP      &kp CAPS  &kp PG_DN  &kp DOLLAR    &kp N0     &kp N7  &kp N8   &kp N9  &kp KP_MULTIPLY  &kp BACKSLASH
                                        &trans    &trans     &trans        &mo 3      &mo 2   &kp DEL
             >;
@@ -346,9 +346,18 @@
             //                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
+//                        bindings = <
+//   &sys_reset  &bootloader   &trans         &trans        &trans          &kp KP_NUM        &tog GAME     &trans        &trans        &trans        &trans        &trans
+//   &trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4      &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &studio_unlock
+//   &bt BT_CLR  &trans        &trans        &trans        &trans          &trans            &trans        &trans        &trans        &trans        &trans        &trans
+//                                           &trans        &trans          &trans            &trans        &trans        &trans
+//                        >;
+//                };
+
+
             bindings = <
-        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &tog 5  &kp F7  &kp F8  &kp F9  &kp F12
-        &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans         &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &tog 5  &kp F7  &kp F8  &kp F9  &kp F12 &trans
+&trans         &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11 &trans
 &trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                  &trans        &trans  &trans    &trans  &trans  &trans
             >;
@@ -359,8 +368,8 @@
 
         func {
             bindings = <
-        &kp F1  &kp F2   &kp F3   &kp F4   &trans    &kp LGUI  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &trans
-        &kp F5  &kp F6   &kp F7   &kp F8   &trans    &trans    &trans          &trans     &trans    &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans    &kp LGUI  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &trans  &trans    
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans    &trans    &trans          &trans     &trans    &trans  &trans    
 &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans    &trans          &trans     &trans    &trans  &trans
                          &trans   &trans   &trans    &trans    &trans          &trans
             >;
@@ -368,8 +377,8 @@
 
         game {
             bindings = <
-       &lt 6 T    &kp Q  &kp W    &kp E      &kp R        &kp Y    &kp U    &kp I      &kp O    &kp P
-       &kp LSHFT  &kp A  &kp S    &kp D      &kp F        &kp H    &kp J    &kp K      &kp L    &kp SEMI
+&trans      &lt 6 T    &kp Q  &kp W    &kp E      &kp R        &kp Y    &kp U    &kp I      &kp O    &kp P   &trans
+&trans      &kp LSHFT  &kp A  &kp S    &kp D      &kp F        &kp H    &kp J    &kp K      &kp L    &kp SEMI &trans
 &kp Z  &kp LCTRL  &kp X  &kp C    &kp V      &kp B        &kp N    &kp M    &kp COMMA  &kp DOT  &kp FSLH  &trans
                          &kp TAB  &lt 1 TAB  &kp SPACE    &kp RET  &kp ESC  &kp BSPC
             >;
@@ -377,8 +386,8 @@
 
         game_support {
             bindings = <
-        &trans  &kp N1  &kp N2  &kp N3  &kp I     &trans  &trans  &trans  &trans  &trans
-        &trans  &kp N4  &kp N5  &kp N6  &kp M     &trans  &trans  &trans  &trans  &trans
+ &trans       &trans  &kp N1  &kp N2  &kp N3  &kp I     &trans  &trans  &trans  &trans  &trans &trans
+ &trans       &trans  &kp N4  &kp N5  &kp N6  &kp M     &trans  &trans  &trans  &trans  &trans &trans
 &trans  &trans  &kp N7  &kp N8  &kp N9  &kp N0    &trans  &trans  &trans  &trans  &trans  &trans
                         &kp J   &kp K   &kp L     &trans  &trans  &trans
             >;
